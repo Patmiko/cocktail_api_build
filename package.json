@@ -7,15 +7,15 @@
   "scripts": {
     "start": "node bin/server.js",
     "build": "node ace build",
-    "dev": "node ace serve --hmr",
+    "dev": "NODE_OPTIONS='--experimental-specifier-resolution=node' node ace serve --hmr",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
-    "node": "20.x",
-    "npm": "9.x"
+    "node": "22.x",
+    "npm": "10.x"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
