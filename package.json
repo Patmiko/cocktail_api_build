@@ -7,15 +7,15 @@
   "scripts": {
     "start": "node bin/server.js",
     "build": "node ace build",
-    "dev": "NODE_OPTIONS='--experimental-specifier-resolution=node' node ace serve --hmr",
+    "dev": "node ace serve --hmr",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
-    "node": "22.x",
-    "npm": "10.x"
+    "node": "v22.14.0'",
+    "npm": "10.9.2'"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
@@ -63,8 +63,7 @@
     "luxon": "^3.5.0",
     "mysql2": "^3.14.0",
     "reflect-metadata": "^0.2.2",
-    "ts-node": "^10.9.2",
-    "ts-node-maintained": "^10.9.5"
+    "ts-node": "^10.9.2"
   },
   "hotHook": {
     "boundaries": [
